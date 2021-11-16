@@ -25,7 +25,13 @@ Lightweight bind/reverse PTY shell with Windows&Linux support implementation by 
 
 You can run a bash and listen port at 8000
 
-`$> ./cliws -p 8000 bash -i`
+Linux
+
+`(bash) $> ./cliws -p 8000 bash -i`
+
+MacOS
+
+`(zsh)$> ./cliws -p 8000 zsh -i` 
 
 then connect and get a comfortable shell.
 

@@ -1,9 +1,9 @@
 use log::LevelFilter;
 use simple_logger::SimpleLogger;
 
-#[cfg(target_os = "linux")]
+#[cfg(any(target_os = "linux", target_os = "macos"))]
 mod xnix;
-#[cfg(target_os = "linux")]
+#[cfg(any(target_os = "linux", target_os = "macos"))]
 use xnix::{bind , connect ,rbind ,rconnect };
 #[cfg(target_os = "windows")]
 mod win;
